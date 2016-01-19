@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DashboardTitle.Text" xml:space="preserve">
+    <value>Dashboard</value>
+    <comment>Dashboard Title</comment>
+  </data>
+  <data name="DashboardUC" xml:space="preserve">
+    <value>Dashboard</value>
+    <comment>Dashboard Upper Case</comment>
+  </data>
+  <data name="DashboardLC" xml:space="preserve">
+    <value>dashboard</value>
+    <comment>Dashboard Lower Case</comment>
+  </data>
+  <data name="SensorsTitle.Text" xml:space="preserve">
+    <value>Sensors</value>
+    <comment>Sensors Title</comment>
+  </data>
+  <data name="SensorsUC" xml:space="preserve">
+    <value>Sensors</value>
+    <comment>Sensors Upper Case</comment>
+  </data>
+  <data name="SensorsLC" xml:space="preserve">
+    <value>sensors</value>
+    <comment>Sensors Lower Case</comment>
+  </data>
+  <data name="SwitchesTitle.Text" xml:space="preserve">
+    <value>Switches</value>
+    <comment>Switches Title</comment>
+  </data>
+  <data name="SwitchesUC" xml:space="preserve">
+    <value>Switches</value>
+    <comment>Switches Upper Case</comment>
+  </data>
+  <data name="SwitchesLC" xml:space="preserve">
+    <value>switches</value>
+    <comment>Switches Lower Case</comment>
+  </data>
+  <data name="ScenesTitle.Text" xml:space="preserve">
+    <value>Scenes</value>
+    <comment>Scenes Title</comment>
+  </data>
+  <data name="ScenesUC" xml:space="preserve">
+    <value>Scenes</value>
+    <comment>Scenes Upper Case</comment>
+  </data>
+  <data name="ScenesLC" xml:space="preserve">
+    <value>scenes</value>
+    <comment>Scenes Lower Case</comment>
+  </data>
+  <data name="RoomsTitle.Text" xml:space="preserve">
+    <value>Rooms</value>
+    <comment>Rooms Title</comment>
+  </data>
+  <data name="RoomsUC" xml:space="preserve">
+    <value>Rooms</value>
+    <comment>Rooms Upper Case</comment>
+  </data>
+  <data name="RoomsLC" xml:space="preserve">
+    <value>rooms</value>
+    <comment>Rooms Lower Case</comment>
+  </data>
+  <data name="DevicesTitle.Text" xml:space="preserve">
+    <value>Devices</value>
+    <comment>Devices Title</comment>
+  </data>
+  <data name="DevicesUC" xml:space="preserve">
+    <value>Devices</value>
+    <comment>Devices Upper Case</comment>
+  </data>
+  <data name="DevicesLC" xml:space="preserve">
+    <value>devices</value>
+    <comment>Devices Lower Case</comment>
+  </data>
+  <data name="LogsTitle.Text" xml:space="preserve">
+    <value>Logs</value>
+    <comment>Logs Title</comment>
+  </data>
+  <data name="LogsUC" xml:space="preserve">
+    <value>Logs</value>
+    <comment>Logs Upper Case</comment>
+  </data>
+  <data name="LogsLC" xml:space="preserve">
+    <value>logs</value>
+    <comment>Logs Lower Case</comment>
+  </data>
+  <data name="SettingsTitle.Text" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Settings Title</comment>
+  </data>
+  <data name="SettingsUC" xml:space="preserve">
+    <value>Settings</value>
+    <comment>Settings Upper Case</comment>
+  </data>
+  <data name="SettingsLC" xml:space="preserve">
+    <value>settings</value>
+    <comment>Settings Lower Case</comment>
+  </data>
+  <data name="LandingTitle.Text" xml:space="preserve">
+    <value>Getting Started</value>
+    <comment>Landing Page Title</comment>
+  </data>
+  <data name="gettingStartedTitle.Text" xml:space="preserve">
+    <value>Getting Started</value>
+    <comment>Getting Started Title</comment>
+  </data>
+  <data name="gettingStarted1.Text" xml:space="preserve">
+    <value>1) Go to Settings and enter your Domoticz details.</value>
+    <comment>Getting Started First Line</comment>
+  </data>
+  <data name="gettingStarted2.Text" xml:space="preserve">
+    <value>2) Go to Devices, remove the “Example Device” and press “Load Devices”</value>
+    <comment>Getting Started Second Line</comment>
+  </data>
+  <data name="gettingStarted3.Text" xml:space="preserve">
+    <value>3) Go to Devices, remove the “Example Device” and press “Load Devices”</value>
+    <comment>Getting Started Third Line</comment>
+  </data>
+  <data name="domoticzSettings.Text" xml:space="preserve">
+    <value>Domoticz Settings</value>
+    <comment>Domoticz settings</comment>
+  </data>
+  <data name="fullscreenSettings.Text" xml:space="preserve">
+    <value>FullScreen Settings</value>
+    <comment>FullScreen settings</comment>
+  </data>
+  <data name="generalSettings.Text" xml:space="preserve">
+    <value>General Settings</value>
+    <comment>General settings</comment>
+  </data>
+  <data name="viewSettings.Text" xml:space="preserve">
+    <value>View Settings</value>
+    <comment>View settings</comment>
+  </data>
+  <data name="refreshSettings.Text" xml:space="preserve">
+    <value>Refresh Settings</value>
+    <comment>Refresh settings</comment>
+  </data>
+  <data name="cortanaSettings.Text" xml:space="preserve">
+    <value>Cortana Settings</value>
+    <comment>Cortana settings</comment>
+  </data>
+  <data name="host.Text" xml:space="preserve">
+    <value>Host</value>
+    <comment>Host string</comment>
+  </data>
+  <data name="port.Text" xml:space="preserve">
+    <value>Port</value>
+    <comment>Port string</comment>
+  </data>
+  <data name="portSsl.Text" xml:space="preserve">
+    <value>Port (SSL)</value>
+    <comment>Port SSL string</comment>
+  </data>
+  <data name="useSsl.Content" xml:space="preserve">
+    <value>Use SSL</value>
+    <comment>Use SSL string</comment>
+  </data>
+  <data name="username.Text" xml:space="preserve">
+    <value>Username</value>
+    <comment>Username string</comment>
+  </data>
+  <data name="password.Text" xml:space="preserve">
+    <value>Password</value>
+    <comment>Password string</comment>
+  </data>
+  <data name="useCreds.Content" xml:space="preserve">
+    <value>Use Credentials</value>
+    <comment>Use Credentials string</comment>
+  </data>
+  <data name="launchFS.Content" xml:space="preserve">
+    <value>Launch in full screen mode</value>
+    <comment>Launch in full screen mode string</comment>
+  </data>
+  <data name="useMinFS.Content" xml:space="preserve">
+    <value>Use minimal overlays when in full screen mode</value>
+    <comment>Use minimal overlays when in full screen mode string</comment>
+  </data>
+  <data name="launch2Dash.Content" xml:space="preserve">
+    <value>Launch to Dashboard instead of overview</value>
+    <comment>Launch to Dashboard instead of overview string</comment>
+  </data>
+  <data name="useSmallIcons.Content" xml:space="preserve">
+    <value>Use smaller icons</value>
+    <comment>Use smaller icons string</comment>
+  </data>
+  <data name="favOnDash.Content" xml:space="preserve">
+    <value>Show favorites on Dashboard</value>
+    <comment>Show favorites on Dashboard string</comment>
+  </data>
+  <data name="refreshInt.Text" xml:space="preserve">
+    <value>Refresh Interval</value>
+    <comment>Refresh Interval</comment>
+  </data>
+  <data name="onlyRefreshOnDash.Content" xml:space="preserve">
+    <value>Only refresh when on the Dashboard, Sensors or other pages that need refreshing (Recommended)</value>
+    <comment>Only refresh when on the Dashboard, Sensors or other pages that need refreshing (Recommended) string</comment>
+  </data>
+  <data name="onlyRefreshMobMan.Content" xml:space="preserve">
+    <value>Only refresh manually when on a mobile device</value>
+    <comment>Only refresh manually when on a mobile device string</comment>
+  </data>
+  <data name="alwaysLoadVCD.Content" xml:space="preserve">
+    <value>Load Cotana VCD file on every boot</value>
+    <comment>Load Cotana VCD file on every boot string</comment>
+  </data>
+  <data name="loadAltVCD.Content" xml:space="preserve">
+    <value>Load alternate Cortana VCD file (Requires restart of the app)</value>
+    <comment>Load alternate Cortana VCD file (Requires restart of the app) string</comment>
+  </data>
+  <data name="showSensors.Content" xml:space="preserve">
+    <value>Show Sensors Page on Menu</value>
+    <comment>Show Sensors Page on Menu string</comment>
+  </data>
+  <data name="showSwitches.Content" xml:space="preserve">
+    <value>Show Switches Page on Menu</value>
+    <comment>Show Switches Page on Menu string</comment>
+  </data>
+  <data name="showScenes.Content" xml:space="preserve">
+    <value>Show Scenes Page on Menu</value>
+    <comment>Show Scenes Page on Menu string</comment>
+  </data>
+  <data name="showRooms.Content" xml:space="preserve">
+    <value>Show Rooms Page on Menu</value>
+    <comment>Show Rooms Page on Menu string</comment>
+  </data>
+  <data name="showLogs.Content" xml:space="preserve">
+    <value>Show Logs Page on Menu</value>
+    <comment>Show Logs Page on Menu string</comment>
+  </data>
+  <data name="showDevices.Content" xml:space="preserve">
+    <value>Show Devices Page on Menu</value>
+    <comment>Show Devices Page on Menu string</comment>
+  </data>
+</root>
