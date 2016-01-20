@@ -130,11 +130,11 @@
     <comment>Dashboard Lower Case</comment>
   </data>
   <data name="SensorsTitle.Text" xml:space="preserve">
-    <value>Sensors</value>
+    <value>Temperatures</value>
     <comment>Sensors Title</comment>
   </data>
   <data name="SensorsUC" xml:space="preserve">
-    <value>Sensors</value>
+    <value>Temperatures</value>
     <comment>Sensors Upper Case</comment>
   </data>
   <data name="SensorsLC" xml:space="preserve">
