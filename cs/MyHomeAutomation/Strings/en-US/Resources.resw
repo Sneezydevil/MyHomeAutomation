@@ -165,6 +165,30 @@
     <value>scenes</value>
     <comment>Scenes Lower Case</comment>
   </data>
+  <data name="WeatherTitle.Text" xml:space="preserve">
+    <value>Weather</value>
+    <comment>Weather Title</comment>
+  </data>
+  <data name="WeatherUC" xml:space="preserve">
+    <value>Weather</value>
+    <comment>Weather Upper Case</comment>
+  </data>
+  <data name="WeatherLC" xml:space="preserve">
+    <value>weather</value>
+    <comment>Weather Lower Case</comment>
+  </data>
+  <data name="UtilityTitle.Text" xml:space="preserve">
+    <value>Utility</value>
+    <comment>Utility Title</comment>
+  </data>
+  <data name="UtilityUC" xml:space="preserve">
+    <value>Utility</value>
+    <comment>Utility Upper Case</comment>
+  </data>
+  <data name="UtilityLC" xml:space="preserve">
+    <value>utility</value>
+    <comment>Utility Lower Case</comment>
+  </data>
   <data name="RoomsTitle.Text" xml:space="preserve">
     <value>Rooms</value>
     <comment>Rooms Title</comment>
@@ -337,6 +361,14 @@
     <value>Show Scenes Page on Menu</value>
     <comment>Show Scenes Page on Menu string</comment>
   </data>
+  <data name="showWeather.Content" xml:space="preserve">
+    <value>Show Weather Page on Menu</value>
+    <comment>Show Weather Page on Menu string</comment>
+  </data>
+  <data name="showUtility.Content" xml:space="preserve">
+    <value>Show Utility Page on Menu</value>
+    <comment>Show Utility Page on Menu string</comment>
+  </data>
   <data name="showRooms.Content" xml:space="preserve">
     <value>Show Rooms Page on Menu</value>
     <comment>Show Rooms Page on Menu string</comment>
@@ -348,5 +380,9 @@
   <data name="showDevices.Content" xml:space="preserve">
     <value>Show Devices Page on Menu</value>
     <comment>Show Devices Page on Menu string</comment>
+  </data>
+  <data name="orderBy.Header" xml:space="preserve">
+    <value>Order By</value>
+    <comment>Order By string</comment>
   </data>
 </root>
