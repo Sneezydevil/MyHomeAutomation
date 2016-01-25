@@ -38,6 +38,10 @@ namespace MyHomeAutomation.Model
         private int levelInt;
         private int maxDimLevel;
 
+        //Utility
+        private string subType;
+        private string data;
+
         private bool showOnDash;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -375,6 +379,38 @@ namespace MyHomeAutomation.Model
             {
                 maxDimLevel = value;
                 NotifyPropertyChanged("MaxDimLevel");
+            }
+        }
+
+        /// <summary>
+        /// SubType of the device.
+        /// </summary>
+        public string SubType
+        {
+            get
+            {
+                return subType;
+            }
+            set
+            {
+                subType = value;
+                NotifyPropertyChanged("SubType");
+            }
+        }
+
+        /// <summary>
+        /// Status of the device.
+        /// </summary>
+        public string Data
+        {
+            get
+            {
+                return data;
+            }
+            set
+            {
+                data = value;
+                NotifyPropertyChanged("Data");
             }
         }
 

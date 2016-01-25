@@ -35,6 +35,8 @@ namespace MyHomeAutomation.Model
     ///   <Level></Level>
     ///   <LevelInt></LevelInt>
     ///   <MaxDimLevel></MaxDimLevel>
+    ///   <SubType></SubType>
+    ///   <Data></Data>
     ///   <ShowOnDash></ShowOnDash>
     ///  </Device>
     ///  <Device>
@@ -264,6 +266,18 @@ namespace MyHomeAutomation.Model
                             device.MaxDimLevel = Int32.Parse(maxDimLevelElement.Value);
                         }
 
+                        var subTypeElement = deviceElement.Descendants("SubType").FirstOrDefault();
+                        if (subTypeElement != null)
+                        {
+                            device.SubType = subTypeElement.Value;
+                        }
+
+                        var dataElement = deviceElement.Descendants("Data").FirstOrDefault();
+                        if (dataElement != null)
+                        {
+                            device.Data = dataElement.Value;
+                        }
+
                         var showOnDashElement = deviceElement.Descendants("ShowOnDash").FirstOrDefault();
                         if (showOnDashElement != null)
                         {
@@ -366,6 +380,8 @@ namespace MyHomeAutomation.Model
                     new XElement("Level", device.Level),
                     new XElement("LevelInt", device.LevelInt),
                     new XElement("MaxDimLevel", device.MaxDimLevel),
+                    new XElement("SubType", device.SubType),
+                    new XElement("Data", device.Data),
                     new XElement("ShowOnDash", device.ShowOnDash)
                     ));
             }
