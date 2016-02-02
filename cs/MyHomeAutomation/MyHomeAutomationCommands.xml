@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="MyHomeAutomationCommandSet_en-us">
+    <AppName> Domoticz </AppName>
+    <Example> Turn on livingroom lights </Example>
+
+    <Command Name="turnOnSwitch">
+      <Example> Turn on livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch on [the] [my] {switch}</ListenFor>
+      <Feedback> Turning on {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="turnOffSwitch">
+      <Example> Turn off livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch off [the] [my] {switch}</ListenFor>
+      <Feedback> Turning off {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="ToggleSwitch">
+      <Example> Toggle livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> toggle [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> toggle [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} toggle [the] [my] {switch}</ListenFor>
+      <Feedback> Toggling {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="SetDimmer">
+      <Example> Set Livingroom dimmer to 60 percent </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set [my] {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set dimmer {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set dimmer {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <Feedback> Setting {dimmer} to {percent} % </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOn">
+      <Example> Have a Good Night! </Example>
+      <ListenFor> [have] [a] good night </ListenFor>
+      <ListenFor> sleeptight </ListenFor>
+      <ListenFor> sweetdreams </ListenFor>
+      <ListenFor> I'm off to bed </ListenFor>
+      <Feedback> Goodnight </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOff">
+      <Example> Good Morning. </Example>
+      <ListenFor> [have] [a] good morning </ListenFor>
+      <ListenFor> Where is my coffee </ListenFor>
+      <Feedback> Goodmorning to you too! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOn">
+      <Example> I'm home. </Example>
+      <ListenFor> I'm home </ListenFor>
+      <ListenFor> I'm back </ListenFor>
+      <Feedback> Welcome home. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOff">
+      <Example> I'm heading out. </Example>
+      <ListenFor> I'm heading out </ListenFor>
+      <Feedback> See you later! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnRoomLights">
+      <Example> Switch on all livingroom lights. </Example>
+      <ListenFor> Switch on all {room} lights </ListenFor>
+      <ListenFor> Turn on all {room} lights </ListenFor>
+      <Feedback> Switching on all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffRoomLights">
+      <Example> Switch off all livingroom lights. </Example>
+      <ListenFor> Switch off all {room} lights </ListenFor>
+      <ListenFor> Turn off all {room} lights </ListenFor>
+      <Feedback> Switching off all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnScene">
+      <Example> Switch on movie scene. </Example>
+      <ListenFor> Scene {scene} on </ListenFor>
+      <ListenFor> Switch on [the] {scene} scene </ListenFor>
+      <ListenFor> Switch to [the] {scene} scene </ListenFor>
+      <ListenFor> Switch on [the] scene {scene} </ListenFor>
+      <ListenFor> Switch to [the] scene {scene} </ListenFor>
+      <ListenFor> Turn on {scene} scene </ListenFor>
+      <Feedback> Switching on {scene} scene. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnGroup">
+      <Example> Switch on garden group. </Example>
+      <ListenFor> Group {group} on </ListenFor>
+      <ListenFor> Switch on [the] {group} group </ListenFor>
+      <ListenFor> Turn on [the] {group} group </ListenFor>
+      <ListenFor> Switch on [the] group {group} </ListenFor>
+      <ListenFor> Turn on [the] group {group} </ListenFor>
+      <Feedback> Switching on {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffGroup">
+      <Example> Switch off garden group. </Example>
+      <ListenFor> Group {group} off </ListenFor>
+      <ListenFor> Switch off [the] {group} group </ListenFor>
+      <ListenFor> Turn off [the] {group} group </ListenFor>
+      <ListenFor> Switch off [the] group {group} </ListenFor>
+      <ListenFor> Turn off [the] group {group} </ListenFor>
+      <Feedback> Switching off {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="showPage">
+      <Example> Show Dashboard. </Example>
+      <ListenFor> Show [the] {page} [page]</ListenFor>
+      <ListenFor> Navigate to [the] {page} [page]</ListenFor>
+      <ListenFor> Goto [the] {page} [page]</ListenFor>
+      <ListenFor> Browse to [the] {page} [page]</ListenFor>
+      <Feedback> Show {page}. </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="switch">
+
+    </PhraseList>
+
+    <PhraseList Label="dimmer">
+
+    </PhraseList>
+
+    <PhraseList Label="room">
+
+    </PhraseList>
+
+    <PhraseList Label="scene">
+
+    </PhraseList>
+
+    <PhraseList Label="group">
+
+    </PhraseList>
+
+    <PhraseList Label="page">
+      <Item>Dashboard</Item>
+      <Item>Temperature</Item>
+      <Item>Sensors</Item>
+      <Item>Switches</Item>
+      <Item>Scenes</Item>
+      <Item>Groups</Item>
+      <Item>Rooms</Item>
+      <Item>Utility</Item>
+      <Item>Weather</Item>
+    </PhraseList>
+
+    <PhraseList Label="percent">
+      <Item>0</Item>
+      <Item>5</Item>
+      <Item>10</Item>
+      <Item>15</Item>
+      <Item>20</Item>
+      <Item>25</Item>
+      <Item>30</Item>
+      <Item>40</Item>
+      <Item>45</Item>
+      <Item>50</Item>
+      <Item>55</Item>
+      <Item>60</Item>
+      <Item>65</Item>
+      <Item>70</Item>
+      <Item>75</Item>
+      <Item>80</Item>
+      <Item>85</Item>
+      <Item>90</Item>
+      <Item>95</Item>
+      <Item>100</Item>
+    </PhraseList>
+    
+  </CommandSet>
+
+  <CommandSet xml:lang="en-gb" Name="MyHomeAutomationCommandSet_en-gb">
+    <AppName> Domoticz </AppName>
+    <Example> Turn on livingroom lights </Example>
+
+    <Command Name="turnOnSwitch">
+      <Example> Turn on livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch on [the] [my] {switch}</ListenFor>
+      <Feedback> Turning on {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="turnOffSwitch">
+      <Example> Turn off livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch off [the] [my] {switch}</ListenFor>
+      <Feedback> Turning off {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="ToggleSwitch">
+      <Example> Toggle livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> toggle [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> toggle [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} toggle [the] [my] {switch}</ListenFor>
+      <Feedback> Toggling {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="SetDimmer">
+      <Example> Set Livingroom dimmer to 60 percent </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set [my] {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set dimmer {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set dimmer {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <Feedback> Setting {dimmer} to {percent} % </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOn">
+      <Example> Have a Good Night! </Example>
+      <ListenFor> [have] [a] good night </ListenFor>
+      <ListenFor> sleeptight </ListenFor>
+      <ListenFor> sweetdreams </ListenFor>
+      <ListenFor> I'm off to bed </ListenFor>
+      <Feedback> Goodnight </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOff">
+      <Example> Good Morning. </Example>
+      <ListenFor> [have] [a] good morning </ListenFor>
+      <ListenFor> Where is my coffee </ListenFor>
+      <Feedback> Goodmorning to you too! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOn">
+      <Example> I'm home. </Example>
+      <ListenFor> I'm home </ListenFor>
+      <ListenFor> I'm back </ListenFor>
+      <Feedback> Welcome home. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOff">
+      <Example> I'm heading out. </Example>
+      <ListenFor> I'm heading out </ListenFor>
+      <Feedback> See you later! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnRoomLights">
+      <Example> Switch on all livingroom lights. </Example>
+      <ListenFor> Switch on all {room} lights </ListenFor>
+      <ListenFor> Turn on all {room} lights </ListenFor>
+      <Feedback> Switching on all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffRoomLights">
+      <Example> Switch off all livingroom lights. </Example>
+      <ListenFor> Switch off all {room} lights </ListenFor>
+      <ListenFor> Turn off all {room} lights </ListenFor>
+      <Feedback> Switching off all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnScene">
+      <Example> Switch on movie scene. </Example>
+      <ListenFor> Scene {scene} on </ListenFor>
+      <ListenFor> Switch on [the] {scene} scene </ListenFor>
+      <ListenFor> Switch to [the] {scene} scene </ListenFor>
+      <ListenFor> Switch on [the] scene {scene} </ListenFor>
+      <ListenFor> Switch to [the] scene {scene} </ListenFor>
+      <ListenFor> Turn on {scene} scene </ListenFor>
+      <Feedback> Switching on {scene} scene. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnGroup">
+      <Example> Switch on garden group. </Example>
+      <ListenFor> Group {group} on </ListenFor>
+      <ListenFor> Switch on [the] {group} group </ListenFor>
+      <ListenFor> Turn on [the] {group} group </ListenFor>
+      <ListenFor> Switch on [the] group {group} </ListenFor>
+      <ListenFor> Turn on [the] group {group} </ListenFor>
+      <Feedback> Switching on {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffGroup">
+      <Example> Switch off garden group. </Example>
+      <ListenFor> Group {group} off </ListenFor>
+      <ListenFor> Switch off [the] {group} group </ListenFor>
+      <ListenFor> Turn off [the] {group} group </ListenFor>
+      <ListenFor> Switch off [the] group {group} </ListenFor>
+      <ListenFor> Turn off [the] group {group} </ListenFor>
+      <Feedback> Switching off {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="showPage">
+      <Example> Show Dashboard. </Example>
+      <ListenFor> Show [the] {page} [page]</ListenFor>
+      <ListenFor> Navigate to [the] {page} [page]</ListenFor>
+      <ListenFor> Goto [the] {page} [page]</ListenFor>
+      <ListenFor> Browse to [the] {page} [page]</ListenFor>
+      <Feedback> Show {page}. </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="switch">
+
+    </PhraseList>
+
+    <PhraseList Label="dimmer">
+
+    </PhraseList>
+
+    <PhraseList Label="room">
+
+    </PhraseList>
+
+    <PhraseList Label="scene">
+
+    </PhraseList>
+
+    <PhraseList Label="group">
+
+    </PhraseList>
+
+    <PhraseList Label="page">
+      <Item>Dashboard</Item>
+      <Item>Temperature</Item>
+      <Item>Sensors</Item>
+      <Item>Switches</Item>
+      <Item>Scenes</Item>
+      <Item>Groups</Item>
+      <Item>Rooms</Item>
+      <Item>Utility</Item>
+      <Item>Weather</Item>
+    </PhraseList>
+
+    <PhraseList Label="percent">
+      <Item>0</Item>
+      <Item>5</Item>
+      <Item>10</Item>
+      <Item>15</Item>
+      <Item>20</Item>
+      <Item>25</Item>
+      <Item>30</Item>
+      <Item>40</Item>
+      <Item>45</Item>
+      <Item>50</Item>
+      <Item>55</Item>
+      <Item>60</Item>
+      <Item>65</Item>
+      <Item>70</Item>
+      <Item>75</Item>
+      <Item>80</Item>
+      <Item>85</Item>
+      <Item>90</Item>
+      <Item>95</Item>
+      <Item>100</Item>
+    </PhraseList>
+
+  </CommandSet>
+
+  <CommandSet xml:lang="en-au" Name="AdventureWorksCommandSet_en-au">
+    <AppName> Domoticz </AppName>
+    <Example> Turn on livingroom lights </Example>
+
+    <Command Name="turnOnSwitch">
+      <Example> Turn on livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch on [the] [my] {switch}</ListenFor>
+      <Feedback> Turning on {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="turnOffSwitch">
+      <Example> Turn off livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch off [the] [my] {switch}</ListenFor>
+      <Feedback> Turning off {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="ToggleSwitch">
+      <Example> Toggle livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> toggle [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> toggle [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} toggle [the] [my] {switch}</ListenFor>
+      <Feedback> Toggling {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="SetDimmer">
+      <Example> Set Livingroom dimmer to 60 percent </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set [my] {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set dimmer {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set dimmer {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <Feedback> Setting {dimmer} to {percent} % </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOn">
+      <Example> Have a Good Night! </Example>
+      <ListenFor> [have] [a] good night </ListenFor>
+      <ListenFor> sleeptight </ListenFor>
+      <ListenFor> sweetdreams </ListenFor>
+      <ListenFor> I'm off to bed </ListenFor>
+      <Feedback> Goodnight </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOff">
+      <Example> Good Morning. </Example>
+      <ListenFor> [have] [a] good morning </ListenFor>
+      <ListenFor> Where is my coffee </ListenFor>
+      <Feedback> Goodmorning to you too! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOn">
+      <Example> I'm home. </Example>
+      <ListenFor> I'm home </ListenFor>
+      <ListenFor> I'm back </ListenFor>
+      <Feedback> Welcome home. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOff">
+      <Example> I'm heading out. </Example>
+      <ListenFor> I'm heading out </ListenFor>
+      <Feedback> See you later! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnRoomLights">
+      <Example> Switch on all livingroom lights. </Example>
+      <ListenFor> Switch on all {room} lights </ListenFor>
+      <ListenFor> Turn on all {room} lights </ListenFor>
+      <Feedback> Switching on all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffRoomLights">
+      <Example> Switch off all livingroom lights. </Example>
+      <ListenFor> Switch off all {room} lights </ListenFor>
+      <ListenFor> Turn off all {room} lights </ListenFor>
+      <Feedback> Switching off all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnScene">
+      <Example> Switch on movie scene. </Example>
+      <ListenFor> Scene {scene} on </ListenFor>
+      <ListenFor> Switch on [the] {scene} scene </ListenFor>
+      <ListenFor> Switch to [the] {scene} scene </ListenFor>
+      <ListenFor> Switch on [the] scene {scene} </ListenFor>
+      <ListenFor> Switch to [the] scene {scene} </ListenFor>
+      <ListenFor> Turn on {scene} scene </ListenFor>
+      <Feedback> Switching on {scene} scene. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnGroup">
+      <Example> Switch on garden group. </Example>
+      <ListenFor> Group {group} on </ListenFor>
+      <ListenFor> Switch on [the] {group} group </ListenFor>
+      <ListenFor> Turn on [the] {group} group </ListenFor>
+      <ListenFor> Switch on [the] group {group} </ListenFor>
+      <ListenFor> Turn on [the] group {group} </ListenFor>
+      <Feedback> Switching on {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffGroup">
+      <Example> Switch off garden group. </Example>
+      <ListenFor> Group {group} off </ListenFor>
+      <ListenFor> Switch off [the] {group} group </ListenFor>
+      <ListenFor> Turn off [the] {group} group </ListenFor>
+      <ListenFor> Switch off [the] group {group} </ListenFor>
+      <ListenFor> Turn off [the] group {group} </ListenFor>
+      <Feedback> Switching off {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="showPage">
+      <Example> Show Dashboard. </Example>
+      <ListenFor> Show [the] {page} [page]</ListenFor>
+      <ListenFor> Navigate to [the] {page} [page]</ListenFor>
+      <ListenFor> Goto [the] {page} [page]</ListenFor>
+      <ListenFor> Browse to [the] {page} [page]</ListenFor>
+      <Feedback> Show {page}. </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="switch">
+
+    </PhraseList>
+
+    <PhraseList Label="dimmer">
+
+    </PhraseList>
+
+    <PhraseList Label="room">
+
+    </PhraseList>
+
+    <PhraseList Label="scene">
+
+    </PhraseList>
+
+    <PhraseList Label="group">
+
+    </PhraseList>
+
+    <PhraseList Label="page">
+      <Item>Dashboard</Item>
+      <Item>Temperature</Item>
+      <Item>Sensors</Item>
+      <Item>Switches</Item>
+      <Item>Scenes</Item>
+      <Item>Groups</Item>
+      <Item>Rooms</Item>
+      <Item>Utility</Item>
+      <Item>Weather</Item>
+    </PhraseList>
+
+    <PhraseList Label="percent">
+      <Item>0</Item>
+      <Item>5</Item>
+      <Item>10</Item>
+      <Item>15</Item>
+      <Item>20</Item>
+      <Item>25</Item>
+      <Item>30</Item>
+      <Item>40</Item>
+      <Item>45</Item>
+      <Item>50</Item>
+      <Item>55</Item>
+      <Item>60</Item>
+      <Item>65</Item>
+      <Item>70</Item>
+      <Item>75</Item>
+      <Item>80</Item>
+      <Item>85</Item>
+      <Item>90</Item>
+      <Item>95</Item>
+      <Item>100</Item>
+    </PhraseList>
+  </CommandSet>
+
+  <CommandSet xml:lang="en-in" Name="AdventureWorksCommandSet_en-in">
+    <AppName> Domoticz </AppName>
+    <Example> Turn on livingroom lights </Example>
+
+    <Command Name="turnOnSwitch">
+      <Example> Turn on livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch on [the] [my] {switch}</ListenFor>
+      <Feedback> Turning on {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="turnOffSwitch">
+      <Example> Turn off livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch off [the] [my] {switch}</ListenFor>
+      <Feedback> Turning off {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="ToggleSwitch">
+      <Example> Toggle livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> toggle [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> toggle [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} toggle [the] [my] {switch}</ListenFor>
+      <Feedback> Toggling {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="SetDimmer">
+      <Example> Set Livingroom dimmer to 60 percent </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set [my] {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set dimmer {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set dimmer {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <Feedback> Setting {dimmer} to {percent} % </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOn">
+      <Example> Have a Good Night! </Example>
+      <ListenFor> [have] [a] good night </ListenFor>
+      <ListenFor> sleeptight </ListenFor>
+      <ListenFor> sweetdreams </ListenFor>
+      <ListenFor> I'm off to bed </ListenFor>
+      <Feedback> Goodnight </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOff">
+      <Example> Good Morning. </Example>
+      <ListenFor> [have] [a] good morning </ListenFor>
+      <ListenFor> Where is my coffee </ListenFor>
+      <Feedback> Goodmorning to you too! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOn">
+      <Example> I'm home. </Example>
+      <ListenFor> I'm home </ListenFor>
+      <ListenFor> I'm back </ListenFor>
+      <Feedback> Welcome home. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOff">
+      <Example> I'm heading out. </Example>
+      <ListenFor> I'm heading out </ListenFor>
+      <Feedback> See you later! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnRoomLights">
+      <Example> Switch on all livingroom lights. </Example>
+      <ListenFor> Switch on all {room} lights </ListenFor>
+      <ListenFor> Turn on all {room} lights </ListenFor>
+      <Feedback> Switching on all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffRoomLights">
+      <Example> Switch off all livingroom lights. </Example>
+      <ListenFor> Switch off all {room} lights </ListenFor>
+      <ListenFor> Turn off all {room} lights </ListenFor>
+      <Feedback> Switching off all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnScene">
+      <Example> Switch on movie scene. </Example>
+      <ListenFor> Scene {scene} on </ListenFor>
+      <ListenFor> Switch on [the] {scene} scene </ListenFor>
+      <ListenFor> Switch to [the] {scene} scene </ListenFor>
+      <ListenFor> Switch on [the] scene {scene} </ListenFor>
+      <ListenFor> Switch to [the] scene {scene} </ListenFor>
+      <ListenFor> Turn on {scene} scene </ListenFor>
+      <Feedback> Switching on {scene} scene. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnGroup">
+      <Example> Switch on garden group. </Example>
+      <ListenFor> Group {group} on </ListenFor>
+      <ListenFor> Switch on [the] {group} group </ListenFor>
+      <ListenFor> Turn on [the] {group} group </ListenFor>
+      <ListenFor> Switch on [the] group {group} </ListenFor>
+      <ListenFor> Turn on [the] group {group} </ListenFor>
+      <Feedback> Switching on {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffGroup">
+      <Example> Switch off garden group. </Example>
+      <ListenFor> Group {group} off </ListenFor>
+      <ListenFor> Switch off [the] {group} group </ListenFor>
+      <ListenFor> Turn off [the] {group} group </ListenFor>
+      <ListenFor> Switch off [the] group {group} </ListenFor>
+      <ListenFor> Turn off [the] group {group} </ListenFor>
+      <Feedback> Switching off {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="showPage">
+      <Example> Show Dashboard. </Example>
+      <ListenFor> Show [the] {page} [page]</ListenFor>
+      <ListenFor> Navigate to [the] {page} [page]</ListenFor>
+      <ListenFor> Goto [the] {page} [page]</ListenFor>
+      <ListenFor> Browse to [the] {page} [page]</ListenFor>
+      <Feedback> Show {page}. </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="switch">
+
+    </PhraseList>
+
+    <PhraseList Label="dimmer">
+
+    </PhraseList>
+
+    <PhraseList Label="room">
+
+    </PhraseList>
+
+    <PhraseList Label="scene">
+
+    </PhraseList>
+
+    <PhraseList Label="group">
+
+    </PhraseList>
+
+    <PhraseList Label="page">
+      <Item>Dashboard</Item>
+      <Item>Temperature</Item>
+      <Item>Sensors</Item>
+      <Item>Switches</Item>
+      <Item>Scenes</Item>
+      <Item>Groups</Item>
+      <Item>Rooms</Item>
+      <Item>Utility</Item>
+      <Item>Weather</Item>
+    </PhraseList>
+
+    <PhraseList Label="percent">
+      <Item>0</Item>
+      <Item>5</Item>
+      <Item>10</Item>
+      <Item>15</Item>
+      <Item>20</Item>
+      <Item>25</Item>
+      <Item>30</Item>
+      <Item>40</Item>
+      <Item>45</Item>
+      <Item>50</Item>
+      <Item>55</Item>
+      <Item>60</Item>
+      <Item>65</Item>
+      <Item>70</Item>
+      <Item>75</Item>
+      <Item>80</Item>
+      <Item>85</Item>
+      <Item>90</Item>
+      <Item>95</Item>
+      <Item>100</Item>
+    </PhraseList>
+
+  </CommandSet>
+
+  <CommandSet xml:lang="en-ca" Name="AdventureWorksCommandSet_en-ca">
+    <AppName> Domoticz </AppName>
+    <Example> Turn on livingroom lights </Example>
+
+    <Command Name="turnOnSwitch">
+      <Example> Turn on livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch on [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch on [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch on [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch on [the] [my] {switch}</ListenFor>
+      <Feedback> Turning on {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="turnOffSwitch">
+      <Example> Turn off livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> turn off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> turn off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} turn off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> switch off [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> switch off [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] switch off [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} switch off [the] [my] {switch}</ListenFor>
+      <Feedback> Turning off {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="ToggleSwitch">
+      <Example> Toggle livingroom lights </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> toggle [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> toggle [my] {builtin:AppName} {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] toggle [the] [my] {switch}</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} toggle [the] [my] {switch}</ListenFor>
+      <Feedback> Toggling {switch} </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="SetDimmer">
+      <Example> Set Livingroom dimmer to 60 percent </Example>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set [my] {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase"> set dimmer {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> set dimmer {builtin:AppName} {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> ask {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> tell {builtin:AppName} [to] set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make {builtin:AppName} set [the] [my] {dimmer} [to] {percent} [percent]</ListenFor>
+      <Feedback> Setting {dimmer} to {percent} % </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOn">
+      <Example> Have a Good Night! </Example>
+      <ListenFor> [have] [a] good night </ListenFor>
+      <ListenFor> sleeptight </ListenFor>
+      <ListenFor> sweetdreams </ListenFor>
+      <ListenFor> I'm off to bed </ListenFor>
+      <Feedback> Goodnight </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="sleepingSwitchOff">
+      <Example> Good Morning. </Example>
+      <ListenFor> [have] [a] good morning </ListenFor>
+      <ListenFor> Where is my coffee </ListenFor>
+      <Feedback> Goodmorning to you too! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOn">
+      <Example> I'm home. </Example>
+      <ListenFor> I'm home </ListenFor>
+      <ListenFor> I'm back </ListenFor>
+      <Feedback> Welcome home. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="homeSwitchOff">
+      <Example> I'm heading out. </Example>
+      <ListenFor> I'm heading out </ListenFor>
+      <Feedback> See you later! </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnRoomLights">
+      <Example> Switch on all livingroom lights. </Example>
+      <ListenFor> Switch on all {room} lights </ListenFor>
+      <ListenFor> Turn on all {room} lights </ListenFor>
+      <Feedback> Switching on all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffRoomLights">
+      <Example> Switch off all livingroom lights. </Example>
+      <ListenFor> Switch off all {room} lights </ListenFor>
+      <ListenFor> Turn off all {room} lights </ListenFor>
+      <Feedback> Switching off all {room} lights. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnScene">
+      <Example> Switch on movie scene. </Example>
+      <ListenFor> Scene {scene} on </ListenFor>
+      <ListenFor> Switch on [the] {scene} scene </ListenFor>
+      <ListenFor> Switch to [the] {scene} scene </ListenFor>
+      <ListenFor> Switch on [the] scene {scene} </ListenFor>
+      <ListenFor> Switch to [the] scene {scene} </ListenFor>
+      <ListenFor> Turn on {scene} scene </ListenFor>
+      <Feedback> Switching on {scene} scene. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOnGroup">
+      <Example> Switch on garden group. </Example>
+      <ListenFor> Group {group} on </ListenFor>
+      <ListenFor> Switch on [the] {group} group </ListenFor>
+      <ListenFor> Turn on [the] {group} group </ListenFor>
+      <ListenFor> Switch on [the] group {group} </ListenFor>
+      <ListenFor> Turn on [the] group {group} </ListenFor>
+      <Feedback> Switching on {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="switchOffGroup">
+      <Example> Switch off garden group. </Example>
+      <ListenFor> Group {group} off </ListenFor>
+      <ListenFor> Switch off [the] {group} group </ListenFor>
+      <ListenFor> Turn off [the] {group} group </ListenFor>
+      <ListenFor> Switch off [the] group {group} </ListenFor>
+      <ListenFor> Turn off [the] group {group} </ListenFor>
+      <Feedback> Switching off {group} group. </Feedback>
+      <Navigate />
+    </Command>
+
+    <Command Name="showPage">
+      <Example> Show Dashboard. </Example>
+      <ListenFor> Show [the] {page} [page]</ListenFor>
+      <ListenFor> Navigate to [the] {page} [page]</ListenFor>
+      <ListenFor> Goto [the] {page} [page]</ListenFor>
+      <ListenFor> Browse to [the] {page} [page]</ListenFor>
+      <Feedback> Show {page}. </Feedback>
+      <Navigate />
+    </Command>
+
+    <PhraseList Label="switch">
+
+    </PhraseList>
+
+    <PhraseList Label="dimmer">
+
+    </PhraseList>
+
+    <PhraseList Label="room">
+
+    </PhraseList>
+
+    <PhraseList Label="scene">
+
+    </PhraseList>
+
+    <PhraseList Label="group">
+
+    </PhraseList>
+
+    <PhraseList Label="page">
+      <Item>Dashboard</Item>
+      <Item>Temperature</Item>
+      <Item>Sensors</Item>
+      <Item>Switches</Item>
+      <Item>Scenes</Item>
+      <Item>Groups</Item>
+      <Item>Rooms</Item>
+      <Item>Utility</Item>
+      <Item>Weather</Item>
+    </PhraseList>
+
+    <PhraseList Label="percent">
+      <Item>0</Item>
+      <Item>5</Item>
+      <Item>10</Item>
+      <Item>15</Item>
+      <Item>20</Item>
+      <Item>25</Item>
+      <Item>30</Item>
+      <Item>40</Item>
+      <Item>45</Item>
+      <Item>50</Item>
+      <Item>55</Item>
+      <Item>60</Item>
+      <Item>65</Item>
+      <Item>70</Item>
+      <Item>75</Item>
+      <Item>80</Item>
+      <Item>85</Item>
+      <Item>90</Item>
+      <Item>95</Item>
+      <Item>100</Item>
+    </PhraseList>
+
+  </CommandSet>
+
+</VoiceCommands>
